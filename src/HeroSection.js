@@ -53,7 +53,7 @@ const HeroSection = () => {
     <div className="hero-section" style={{ backgroundImage: `url(${currentSlide.image})` }}>
       {/* Top Bar */}
       <div className="top-bar-text">
-        <a href="#">ENGLISH</a>
+        <a href="#">ENGLIS</a>
         <a href="#">සිංහල</a>
         <a href="#">தமிழ்</a>
       </div>
