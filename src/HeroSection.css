@@ -1,0 +1,247 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Top Bar */
+  .top-bar-text {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    padding: 0px 82px;
+    background-color: transparent; 
+  }
+  
+  .top-bar-text a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 5px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 12px; 
+  }
+  
+  .top-bar-text a:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 30%;
+    height:40%;
+    width: 1px;
+    background-color: #333; 
+  }
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0px 96px;
+    backdrop-filter: blur(4px);
+  }
+  
+  .top-bar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 60px;
+    margin-left: 14px;
+  }
+  
+  .dept-text p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  /* Search Area */
+.top-bar-right {
+    display: flex;
+    justify-content: center; /* Centers the search bar horizontally */
+    align-items: center;
+    width: 100%; /* Ensures full width to allow centering */
+    padding: 10px 0;
+  }
+  
+  .search-input {
+    padding: 7px 189px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+    margin-left: 77px;
+    background-color: #e2dfdf;
+  }
+  
+  .search-button {
+    padding: 8px 12px;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-icon {
+    color: white;
+    font-size: 16px;
+  }
+  
+  .hotline {
+    margin-left: 100px;
+    text-align: right;
+    color :#000
+  }
+  
+  .hotline-number {
+    margin: 0;
+    font-weight: bold;
+    color: #dc3545;
+  }
+  
+  
+  /* Nav Bar */
+  .nav-bar {
+    padding: 12px 0;
+    text-align: center;
+    background-color: transparent; /* Removed background */
+  }
+  
+  .nav-bar a {
+    color: white;
+    margin: 0 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    transition: color 0.3s;
+  }
+  
+  .nav-bar a:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -40px; /* Slight spacing from text */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 16px;
+    width: 1px;
+    background-color: white; /* Line color */
+  }
+  
+  .nav-bar a:hover {
+    color: #ffd700;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: relative;
+  }
+  
+  .arrow {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s;
+  }
+  
+  .arrow:hover {
+    transform: scale(1.2);
+  }
+  
+  .hero-text {
+    text-align: center;
+    max-width: 624px;
+    margin-left: 476px;
+  }
+  
+  .grade {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .grade-number {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .smart-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .subtext {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .lang-buttons {
+    margin: 20px 0;
+  }
+  
+  .lang-buttons .btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn.english {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn.sinhala {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .btn.tamil {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  .visit-text {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .visit-link {
+    font-weight: bold;
+    color: #ffd700;
+  }
+  
