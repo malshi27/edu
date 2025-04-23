@@ -11,6 +11,7 @@ const slides = [
     subtext: 'NOW YOU CAN ACCESS THE ONLINE VERSIONS',
     visit: 'SMARTTEXTBOOK.EPD.GOV.LK'
   },
+  
   {
     image: '/header-image.jpg',
     grade: '10',
@@ -18,6 +19,7 @@ const slides = [
     subtext: 'LEARN ANYWHERE, ANYTIME',
     visit: 'LEARNONLINE.EPD.GOV.LK'
   },
+
   {
     image: '/edu.jpg',
     grade: '9',

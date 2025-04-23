@@ -34,6 +34,7 @@ const books = {
       image: './bird.jpg',
     },
   ],
+
   supplementaryReadings: [
     {
       title: 'Additional Book 1',
@@ -65,6 +66,8 @@ const BookSection = () => {
         </button>
       </div>
 
+
+
       <div className="book-grid">
         {books[activeTab].map((book, index) => (
           <div key={index} className="book-card">
@@ -80,5 +83,6 @@ const BookSection = () => {
     </div>
   );
 };
+
 
 export default BookSection;
