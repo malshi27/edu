@@ -15,9 +15,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
     position: relative;
-    top: -3.5rem;
+    top: -4.5rem;
     z-index: 10;
     flex-wrap: wrap;
   }
