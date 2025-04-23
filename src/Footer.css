@@ -1,0 +1,134 @@
+.footer {
+    background-color: #6d1e1e;
+    color: white;
+    padding-top: 1.5rem;
+    position: relative;
+    font-size: 13px;
+    margin-top: 33px;
+  }
+  
+  .logo-section {
+    background-color: rgb(236, 236, 236);
+    padding: 0.7rem;
+    margin: 0 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -3.5rem;
+    z-index: 10;
+    flex-wrap: wrap;
+  }
+  
+  .logo-item {
+    text-align: center;
+    margin: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+  }
+  
+  .logo-img {
+    height: 40px;
+    margin-bottom: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .logo-text {
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+  
+  }
+  
+  .footer-content {
+    padding: 1rem;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-col {
+    max-width: 230px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-links {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .link-group a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 0 0.5rem;
+    position: relative;
+  }
+
+  .link-group a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background-color: white;
+  }
+
+  .promo-link a {
+    color: white;
+    margin-right: 0.75rem;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  .promo-link a {
+    font-weight: 600;
+  }
+  
+  .footer-bottom  {
+    text-align: center;
+    padding-top: 2rem;
+    /* border-top: 10px solid #888; */ 
+    background-color: #646464;
+  }
+  .footer-bottom-text p{
+    margin-top: -22px;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .back-to-top {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+  
+  .back-to-top button {
+    background-color: #6d1e1e;
+    color: white;
+    padding: 0.4rem 0.6rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  

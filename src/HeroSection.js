@@ -65,7 +65,7 @@ const HeroSection = () => {
         <div className="top-bar-right">
           <input
             type="text"
-            placeholder=" find your books here..."
+            placeholder="find your books here..."
             className="search-input"
           />
           <button className="search-button">
@@ -101,10 +101,15 @@ const HeroSection = () => {
           </p>
           <h1 className="smart-title">{currentSlide.title}</h1>
           <p className="subtext">{currentSlide.subtext}</p>
+          <div className="lang-box">
           <div className="lang-buttons">
-            <button className="btn english">ENGLISH</button>
+            {/* <button className="btn english">ENGLISH</button>
             <button className="btn sinhala">සිංහල</button>
-            <button className="btn tamil">தமிழ்</button>
+            <button className="btn tamil">தமிழ்</button> */}
+                <a href="#">ENGLISH</a>
+                <a href="#">සිංහල</a>
+                <a href="#">தமிழ்</a>
+          </div>
           </div>
           <p className="visit-text">
             VISIT: <span className="visit-link">{currentSlide.visit}</span>
