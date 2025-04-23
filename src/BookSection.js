@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './BookSection.css';
 
+
 const books = {
   newReleases: [
     {
@@ -35,6 +36,7 @@ const books = {
     },
   ],
 
+
   supplementaryReadings: [
     {
       title: 'Additional Book 1',
@@ -44,6 +46,7 @@ const books = {
     },
   ],
 };
+
 
 const BookSection = () => {
   const [activeTab, setActiveTab] = useState('newReleases');
@@ -65,7 +68,6 @@ const BookSection = () => {
           Supplementary Readings
         </button>
       </div>
-
 
 
       <div className="book-grid">
