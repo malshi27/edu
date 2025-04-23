@@ -5,6 +5,7 @@ export default function BookGallery() {
   const [activeTab, setActiveTab] = useState('New Releases');
 
   const books = [
+
     {
       id: 1,
       title: 'Birds of Sri Lanka',
@@ -13,6 +14,7 @@ export default function BookGallery() {
       cover: '/api/placeholder/180/240',
       bgColor: 'yellow'
     },
+
     {
       id: 2,
       title: 'Science Smart 7',
@@ -30,7 +32,7 @@ export default function BookGallery() {
       cover: '/api/placeholder/180/240',
       bgColor: 'blue'
     },
-    
+
     {
       id: 4,
       title: 'Science Smart 9',
@@ -39,6 +41,7 @@ export default function BookGallery() {
       cover: '/api/placeholder/180/240',
       bgColor: 'orange'
     },
+
     {
       id: 5,
       title: 'Workbook Science',
@@ -47,9 +50,11 @@ export default function BookGallery() {
       cover: '/api/placeholder/180/240',
       bgColor: 'red'
     }
+
   ];
 
   return (
+
     <div className="book-gallery-container">
       <h2 className="gallery-title">GET YOUR BOOKS ONLINE</h2>
 
@@ -75,13 +80,14 @@ export default function BookGallery() {
               <img src={book.cover} alt={book.title} />
             </div>
             <div className="book-info">
-              <h3>{book.title}</h3>
-              <p>{book.subtitle}</p>
-              <small>{book.edition || book.grade}</small>
+              <h3> {book.title} </h3>
+              <p> {book.subtitle} </p>
+              <small> {book.edition || book.grade} </small>
             </div>
-            <button className="download-btn">Download</button>
+            <button className = "download-btn"> Download </button>
           </div>
         ))}
+
       </div>
     </div>
   );
