@@ -21,6 +21,7 @@ export default function BookGallery() {
       cover: '/api/placeholder/180/240',
       bgColor: 'green'
     },
+
     {
       id: 3,
       title: 'Echelon',
@@ -29,6 +30,7 @@ export default function BookGallery() {
       cover: '/api/placeholder/180/240',
       bgColor: 'blue'
     },
+    
     {
       id: 4,
       title: 'Science Smart 9',
