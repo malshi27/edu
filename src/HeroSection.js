@@ -3,6 +3,7 @@ import { MdArrowForwardIos, MdArrowBackIos } from 'react-icons/md';
 import Header from './Header'; // 👈 Import your new Header
 import './HeroSection.css';
 
+
 const slides = [
   {
     image: '/education.jpg',

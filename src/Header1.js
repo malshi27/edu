@@ -29,7 +29,7 @@ const Header1 = () => {
           </button>
           <div className="hotline-1">
             <p><strong>HOTLINE</strong></p>
-            <p className="hotline-number-1">011 278 48 15</p>
+            <p className="hotline-number-1">011 278 4815</p>
           </div>
         </div>
       </div>

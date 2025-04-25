@@ -30,12 +30,12 @@ const Header = () => {
           </button>
           <div className="hotline">
             <p><strong>HOTLINE</strong></p>
-            <p className="hotline-number">011 278 48 15</p>
+            <p className="hotline-number">011 278 4815</p>
           </div>
         </div>
       </div>
 
-      {/* Navigation Bar */}
+      {/*Navigation Bar*/}
       <div className="nav-bar">
         <NavLink to="/" end className="nav-link">HOME</NavLink>
         <NavLink to="/about" className="nav-link">ABOUT US</NavLink>

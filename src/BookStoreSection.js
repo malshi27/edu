@@ -1,6 +1,5 @@
 // BookStoreSection.js
 import React, { useState } from "react";
-
 import "./BookStoreSection.css";
 
 const books = [
