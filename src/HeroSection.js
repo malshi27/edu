@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { FaSearch } from 'react-icons/fa';
 import { MdArrowForwardIos, MdArrowBackIos } from 'react-icons/md';
+import Header from './Header'; // 👈 Import your new Header
 import './HeroSection.css';
 
 const slides = [
@@ -11,7 +11,6 @@ const slides = [
     subtext: 'NOW YOU CAN ACCESS THE ONLINE VERSIONS',
     visit: 'SMARTTEXTBOOK.EPD.GOV.LK'
   },
-  
   {
     image: '/header-image.jpg',
     grade: '10',
@@ -19,7 +18,6 @@ const slides = [
     subtext: 'LEARN ANYWHERE, ANYTIME',
     visit: 'LEARNONLINE.EPD.GOV.LK'
   },
-
   {
     image: '/edu.jpg',
     grade: '9',
@@ -53,43 +51,7 @@ const HeroSection = () => {
 
   return (
     <div className="hero-section" style={{ backgroundImage: `url(${currentSlide.image})` }}>
-      {/* Top Bar */}
-      <div className="top-bar-text">
-        <a href="#">ENGLISH</a>
-        <a href="#">සිංහල</a>
-        <a href="#">தமிழ்</a>
-      </div>
-
-      <div className="top-bar">
-        <div className="top-bar-left">
-          <img src="/logo2.png" alt="Logo" className="logo" />
-        </div>
-        <div className="top-bar-right">
-          <input
-            type="text"
-            placeholder="find your books here..."
-            className="search-input"
-          />
-          <button className="search-button">
-            <FaSearch className="search-icon" />
-          </button>
-          <div className="hotline">
-            <p><strong>HOTLINE</strong></p>
-            <p className="hotline-number">011 278 48 15</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Navigation Bar */}
-      <div className="nav-bar">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">BOOK STORE</a>
-        <a href="#">PROCUREMENTS</a>
-        <a href="#">CAREERS</a>
-        <a href="#">MEDIA</a>
-        <a href="#">NEWS</a>
-      </div>
+      <Header /> {/* 👈 Use Header here */}
 
       {/* Hero Content */}
       <div className="hero-content">
@@ -104,14 +66,11 @@ const HeroSection = () => {
           <h1 className="smart-title">{currentSlide.title}</h1>
           <p className="subtext">{currentSlide.subtext}</p>
           <div className="lang-box">
-          <div className="lang-buttons">
-            {/* <button className="btn english">ENGLISH</button>
-            <button className="btn sinhala">සිංහල</button>
-            <button className="btn tamil">தமிழ்</button> */}
-                <a href="#">ENGLISH</a>
-                <a href="#">සිංහල</a>
-                <a href="#">தமிழ்</a>
-          </div>
+            <div className="lang-buttons">
+              <a href="#">ENGLISH</a>
+              <a href="#">සිංහල</a>
+              <a href="#">தமிழ்</a>
+            </div>
           </div>
           <p className="visit-text">
             VISIT: <span className="visit-link">{currentSlide.visit}</span>

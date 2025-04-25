@@ -5,7 +5,7 @@ import './BookSection.css';
 const books = {
   newReleases: [
     {
-      title: 'Birds of Sri Lanka',
+      title: 'Birds of Sri Lanka Part II',
       subtitle: 'new version',
       grade: 'New edition',
       image: './bird.jpg',
@@ -17,7 +17,7 @@ const books = {
       image: './bird.jpg',
     },
     {
-      title: 'Echelon Tertiary Way',
+      title: 'Echelon Tertiary Way Part II',
       subtitle: '',
       grade: 'Grade 12',
       image: './bird.jpg',
@@ -29,7 +29,7 @@ const books = {
       image: './bird.jpg',
     },
     {
-      title: 'Workbook Science',
+      title: 'Workbook Science Part II',
       subtitle: 'Class IX',
       grade: 'Grade 10',
       image: './bird.jpg',
@@ -70,14 +70,14 @@ const BookSection = () => {
       </div>
       
 
-      <div className="book-grid">
+      <div className="book-grid-1">
         {books[activeTab].map((book, index) => (
-          <div key={index} className="book-card">
-            <img src={book.image} alt={book.title} className="book-image" />
-            <div className="book-content">
-              <h3 className="book-title">{book.title}</h3>
-              <p className="book-grade">{book.grade}</p>
-              <button className="download-button">DOWNLOAD</button>
+          <div key={index} className="book-card-1">
+            <img src={book.image} alt={book.title} className="book-image-1" />
+            <div className="book-content-1">
+              <h3 className="book-title-1">{book.title}</h3>
+              <p className="book-grade-1">{book.grade}</p>
+              <button className="download-button-1">DOWNLOAD</button>
             </div>
           </div>
         ))}

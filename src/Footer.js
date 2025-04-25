@@ -63,7 +63,7 @@ const Footer = () => {
         <div className="footer-bottom">
         <div className="footer-bottom-text">
         <p> Copyright © 2020 Educational Publications Department. All Rights Reserved.
-          Design & Developed by SLIT</p> </div>
+          Design & Developed by SLIIT</p> </div>
         </div>
       
 
