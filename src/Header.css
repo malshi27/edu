@@ -129,4 +129,11 @@
   .nav-bar a:hover {
     color: #ffd700;
   }
+
+  /* Active link style */
+  .nav-link.active {
+    color: #ffd700;
+    /* border-bottom: 2px solid #ffd700; */
+    padding-bottom: 4px;
+  }
   

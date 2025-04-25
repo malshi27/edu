@@ -1,8 +1,8 @@
 // Header.js
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import './Header.css'; // Or a separate CSS file like Header.css if preferred
+import { NavLink } from 'react-router-dom'; // <-- Use NavLink instead of Link
+import './Header.css';
 
 const Header = () => {
   return (
@@ -37,13 +37,13 @@ const Header = () => {
 
       {/* Navigation Bar */}
       <div className="nav-bar">
-        <Link to="/">HOME</Link>
-        <a href="#">ABOUT US</a>
-        <Link to="/bookstore">BOOK STORE</Link>
-        <a href="#">PROCUREMENTS</a>
-        <a href="#">CAREERS</a>
-        <a href="#">MEDIA</a>
-        <a href="#">NEWS</a>
+        <NavLink to="/" end className="nav-link">HOME</NavLink>
+        <NavLink to="/about" className="nav-link">ABOUT US</NavLink>
+        <NavLink to="/bookstore" className="nav-link">BOOK STORE</NavLink>
+        <NavLink to="/procurements" className="nav-link">PROCUREMENTS</NavLink>
+        <NavLink to="/careers" className="nav-link">CAREERS</NavLink>
+        <NavLink to="/media" className="nav-link">MEDIA</NavLink>
+        <NavLink to="/news" className="nav-link">NEWS</NavLink>
       </div>
     </header>
   );

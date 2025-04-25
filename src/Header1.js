@@ -1,11 +1,11 @@
 import React from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
-import './Head.css'; // Ensure this is where your styles are
+import { NavLink } from 'react-router-dom'; // 👈 Use NavLink instead of Link
+import './Header1.css';
 
 const Header1 = () => {
   return (
-    <header className="header-background-1">  {/* Add a class for background */}
+    <header className="header-background-1">
       {/* Top Bar Language Links */}
       <div className="top-bar-text-1">
         <a href="#">ENGLISH</a>
@@ -22,7 +22,7 @@ const Header1 = () => {
           <input
             type="text"
             placeholder="find your books here..."
-            className="search-input"
+            className="search-input-1"
           />
           <button className="search-button-1">
             <FaSearch className="search-icon-1" />
@@ -36,13 +36,13 @@ const Header1 = () => {
 
       {/* Navigation Bar */}
       <div className="nav-bar-1">
-        <Link to="/">HOME</Link>
-        <Link to="#">ABOUT US</Link>
-        <Link to="/bookstore">BOOK STORE</Link>
-        <Link to="#">PROCUREMENTS</Link>
-        <Link to="#">CAREERS</Link>
-        <Link to="#">MEDIA</Link>
-        <Link to="#">NEWS</Link>
+        <NavLink to="/" end className="nav-link-1">HOME</NavLink>
+        <NavLink to="/about" className="nav-link-1">ABOUT US</NavLink>
+        <NavLink to="/bookstore" className="nav-link-1">BOOK STORE</NavLink>
+        <NavLink to="/procurements" className="nav-link-1">PROCUREMENTS</NavLink>
+        <NavLink to="/careers" className="nav-link-1">CAREERS</NavLink>
+        <NavLink to="/media" className="nav-link-1">MEDIA</NavLink>
+        <NavLink to="/news" className="nav-link-1">NEWS</NavLink>
       </div>
     </header>
   );
