@@ -32,16 +32,16 @@ function BookStoreSection() {
       <aside className="bookstore-sidebar">
         <h2>Book Type</h2>
         <div className="filter-group">
-          <label><input type="checkbox" /> School Text Books</label>
-          <label><input type="checkbox" /> Private Text Books</label>
-          <label><input type="checkbox" /> Supplementary Reading Books</label>
+          <label><input type="checkbox"/> School Text Books</label>
+          <label><input type="checkbox"/> Private Text Books</label>
+          <label><input type="checkbox"/> Supplementary Reading Books</label>
         </div>
 
         <h2>Language</h2>
         <div className="filter-group">
-          <label><input type="checkbox" /> Sinhala</label>
-          <label><input type="checkbox" /> Tamil</label>
-          <label><input type="checkbox" /> English</label>
+          <label><input type="checkbox"/> Sinhala</label>
+          <label><input type="checkbox"/> Tamil</label>
+          <label><input type="checkbox"/> English</label>
         </div>
 
         <h2>Grade</h2>
