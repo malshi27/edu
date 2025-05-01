@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./BookStoreSection.css";
 
 const books = [
-  { title: "Birds of Sri Lanka", image: "/bird.jpg" },
+  { title: "Birds of Sri Lanka ", image: "/bird.jpg" },
   { title: "Plants of the Island", image: "/bird.jpg" },
   { title: "History for Grade 6", image: "/bird.jpg" },
   { title: "Mathematics - Volume 1", image: "/bird.jpg" },

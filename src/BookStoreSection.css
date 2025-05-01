@@ -59,12 +59,17 @@
   }
   
   .book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #fff;
     border-radius: 16px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     overflow: hidden;
     text-align: center;
     transition: box-shadow 0.2s ease;
+    height: 100%; /* important for consistent card height */
+    min-height: 340px; /* you can adjust this height */
   }
   
   .book-card:hover {
@@ -85,14 +90,16 @@
 
    .download-button {
     background-color: #d9534f;
-    color: white;
-    border: none;
-    padding: 8px 0;
-    width: 100%;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 0 4px 4px;
+  transition: background-color 0.3s ease;
+ 
+  min-height: 45px; /* fixed button height */
   }
   
   .download-button:hover {
