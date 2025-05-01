@@ -23,6 +23,7 @@ function App() {
                 <QuickExplore />
                 <ServiceCards />
                 <BookSection />
+
                 <Footer />
               </>
             }

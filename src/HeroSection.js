@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MdArrowForwardIos, MdArrowBackIos } from 'react-icons/md';
-import Header from './Header'; // 👈 Import your new Header
+import Header from './Header'; 
 import './HeroSection.css';
 
 
@@ -52,7 +52,7 @@ const HeroSection = () => {
 
   return (
     <div className="hero-section" style={{ backgroundImage: `url(${currentSlide.image})` }}>
-      <Header /> {/* 👈 Use Header here */}
+      <Header /> {/*  Use Header here */}
 
       {/* Hero Content */}
       <div className="hero-content">
