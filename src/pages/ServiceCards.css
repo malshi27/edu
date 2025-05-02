@@ -2,9 +2,9 @@
   display: flex;
   gap: 45px;
   justify-content: center;
-  padding: 40px 10px;
+  padding: 140px 10px;
   flex-wrap: nowrap;
-  overflow-x: scroll; /* Horizontal scroll for mobile */
+  overflow-x: scroll; /*Horizontal scroll for mobile */
   scroll-snap-type: x mandatory; /* Ensure the scroll snaps to each card */
   -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
   scroll-behavior: smooth; /* Smooth scrolling */
@@ -41,7 +41,7 @@
   font-weight: 500;
 }
 
-/* Responsive adjustments for larger screens */
+/*  Responsive adjustments for larger screens  */
 @media (max-width: 1200px) {
   .service-card {
     width: 30%;
@@ -75,9 +75,9 @@
     font-size: 12px; /* Reduce font size */
   }
 
-  /* Adjust for scrolling behavior on mobile */
+  /*  Adjust for scrolling behavior on mobile  */
   .service-cards-container::-webkit-scrollbar {
-    height: 8px; /* Custom scrollbar size */
+    height: 8px; /* Custom scrollbar size  */
   }
 
   .service-cards-container::-webkit-scrollbar-thumb {

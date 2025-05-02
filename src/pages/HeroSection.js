@@ -38,9 +38,9 @@ const HeroSection = () => {
   };
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndex((prevIndex) =>                                                                                   
       prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-    );
+    );                                                                                                              
   };
 
   useEffect(() => {
@@ -60,6 +60,7 @@ const HeroSection = () => {
           <MdArrowBackIos />
         </button>
 
+
         <div className="hero-text">
           <p className="grade">
             GRADE <span className="grade-number">{currentSlide.grade}</span> SCIENCE
@@ -77,6 +78,7 @@ const HeroSection = () => {
             VISIT: <span className="visit-link">{currentSlide.visit}</span>
           </p>
         </div>
+
 
         <button className="arrow right-arrow" onClick={goToNext}>
           <MdArrowForwardIos />
