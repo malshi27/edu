@@ -1,6 +1,6 @@
 /* Header Section */
 .header-background-1 {
-  background-image: url('../public/education.jpg'); /* Path to your image */
+  background-image: url('/public/education.jpg'); /* Path to your image */
   background-size: cover; /* Ensures the image covers the entire header */
   background-position: center; /* Centers the image */
   background-attachment: fixed; /* Keeps the image fixed while scrolling */

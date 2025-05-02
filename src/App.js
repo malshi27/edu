@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HeroSection from './HeroSection';
-import Header1 from './Header1';
-import QuickExplore from './QuickExplore';
-import ServiceCards from './ServiceCards';
-import BookSection from './BookSection';
-import Footer from './Footer';
-import BookStoreSection from './BookStoreSection'; // Import the new Book Store section
+import HeroSection from './pages/HeroSection';
+import Header1 from './components/Header1';
+import QuickExplore from './pages/QuickExplore';
+import ServiceCards from './pages/ServiceCards';
+import BookSection from './pages/BookSection';
+import Footer from './components/Footer';
+import BookStoreSection from './pages/BookStoreSection'; // Import the new Book Store section
 
 function App() {
   return (

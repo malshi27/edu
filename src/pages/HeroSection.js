@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MdArrowForwardIos, MdArrowBackIos } from 'react-icons/md';
-import Header from './Header'; 
+import Header from '../components/Header'; 
 import './HeroSection.css';
 
 
