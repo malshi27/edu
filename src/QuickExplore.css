@@ -76,3 +76,78 @@
     text-decoration: none;
   }
   
+  /* For tablets and below */
+@media (max-width: 992px) {
+  .quick-explore-container {
+    padding: 16px;
+    gap: 12px;
+    margin: -50px auto;
+    max-width: 95%;
+  }
+
+  .quick-explore-left {
+    min-width: 160px;
+    padding: 20px;
+  }
+
+  .quick-explore-heading {
+    font-size: 18px;
+  }
+
+  .quick-explore-sub {
+    font-size: 13px;
+  }
+
+  .quick-explore-card {
+    min-width: 200px;
+    padding: 14px;
+  }
+
+  .quick-explore-title,
+  .quick-explore-text,
+  .quick-explore-link {
+    font-size: 13px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .quick-explore-container {
+    flex-direction: column;
+    overflow-x: visible;
+    margin: 0 auto;
+  }
+
+  .quick-explore-left,
+  .quick-explore-card {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 12px;
+  }
+
+  .quick-explore-left {
+    padding: 16px;
+    text-align: center;
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+  .quick-explore-heading {
+    font-size: 16px;
+  }
+
+  .quick-explore-sub {
+    font-size: 12px;
+  }
+
+  .quick-explore-title,
+  .quick-explore-text,
+  .quick-explore-link {
+    font-size: 12px;
+  }
+
+  .quick-explore-container {
+    padding: 12px;
+  }
+}

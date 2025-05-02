@@ -17,6 +17,7 @@
     padding: 16px;
     border-radius: 16px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
   }
   
   .bookstore-sidebar h2 {
@@ -50,7 +51,10 @@
   .bookstore-main {
     flex: 3;
   }
-  
+  .main-heading{
+    margin-bottom: 15px;
+    margin-top: -8px;
+  }
   .book-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -69,7 +73,7 @@
     text-align: center;
     transition: box-shadow 0.2s ease;
     height: 100%; /* important for consistent card height */
-    min-height: 340px; /* you can adjust this height */
+    min-height: 298px; /* you can adjust this height */
   }
   
   .book-card:hover {
@@ -85,7 +89,7 @@
   .book-title {
     padding: 10px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
   }
 
    .download-button {
@@ -99,7 +103,7 @@
   border-radius: 0 0 4px 4px;
   transition: background-color 0.3s ease;
  
-  min-height: 45px; /* fixed button height */
+  min-height: 30px; 
   }
   
   .download-button:hover {
@@ -137,7 +141,7 @@
   .book-title {
     padding: 10px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
   }
 
    .download-button {
@@ -161,6 +165,7 @@
     display: flex;
     justify-content: center;
     gap: 6px;
+    margin-bottom: 50px;
   }
   
   .pagination button {

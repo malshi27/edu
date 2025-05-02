@@ -38,8 +38,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  max-width: 1200px;
+  max-width: 1082px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .book-card-1 {
@@ -75,7 +76,7 @@
 .book-title-1 {
   padding: 10px;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .book-grade-1 {
@@ -94,8 +95,8 @@
   cursor: pointer;
   border-radius: 0 0 4px 4px;
   transition: background-color 0.3s ease;
+  min-height: 30px;
 
-  min-height: 45px; /* fixed button height */
 }
 
 .download-button-1:hover {

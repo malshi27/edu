@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import {
   Store,
   Users,
@@ -6,7 +6,7 @@ import {
   ClipboardList,
   MonitorPlay,
 } from 'lucide-react';
-import './ServiceCards.css'; // Import the CSS file
+import './ServiceCards.css';
 
 const services = [
   { icon: <Store size={40} />, label: 'Text Books Download Centers' },
@@ -17,8 +17,32 @@ const services = [
 ];
 
 const ServiceCards = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const scrollContainer = containerRef.current;
+
+    let index = 0;
+    const scrollInterval = setInterval(() => {
+      if (!scrollContainer || window.innerWidth > 768) return; // Only for mobile
+
+      const cardWidth = scrollContainer.firstChild.offsetWidth + 45; // card width + gap
+      index++;
+
+      // Reset to first card if end is reached
+      if (index >= services.length) {
+        scrollContainer.scrollTo({ left: 0, behavior: 'smooth' });
+        index = 0;
+      } else {
+        scrollContainer.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      }
+    }, 3000); // Every 3 seconds
+
+    return () => clearInterval(scrollInterval); // Cleanup on unmount
+  }, []);
+
   return (
-    <div className="service-cards-container">
+    <div className="service-cards-container" ref={containerRef}>
       {services.map((service, index) => (
         <div className="service-card" key={index}>
           <div className="service-icon">{service.icon}</div>
