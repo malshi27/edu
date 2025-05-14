@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './BookSection.css';
 
-
 const books = {
   newReleases: [
     {
@@ -35,8 +34,6 @@ const books = {
       image: './bird.jpg',
     },
   ],
-
-
   supplementaryReadings: [
     {
       title: 'Additional Book 1',
@@ -47,9 +44,17 @@ const books = {
   ],
 };
 
-
 const BookSection = () => {
   const [activeTab, setActiveTab] = useState('newReleases');
+  const currentBooks = books[activeTab];
+
+  // Calculate placeholders to fill row (optional: target 3 columns for consistency)
+  const placeholders = [];
+  const remainder = currentBooks.length % 3;
+  const toAdd = remainder === 0 ? 0 : 3 - remainder;
+  for (let i = 0; i < toAdd; i++) {
+    placeholders.push(<div key={`placeholder-${i}`} className="book-card-1 invisible"></div>);
+  }
 
   return (
     <div className="book-section">
@@ -68,10 +73,9 @@ const BookSection = () => {
           Supplementary Readings
         </button>
       </div>
-      
 
       <div className="book-grid-1">
-        {books[activeTab].map((book, index) => (
+        {currentBooks.map((book, index) => (
           <div key={index} className="book-card-1">
             <img src={book.image} alt={book.title} className="book-image-1" />
             <div className="book-content-1">
@@ -81,10 +85,10 @@ const BookSection = () => {
             </div>
           </div>
         ))}
+        {placeholders}
       </div>
     </div>
   );
 };
-
 
 export default BookSection;

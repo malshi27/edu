@@ -1,255 +1,242 @@
-  /* Base styles */
-  *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    .hero-section {
-      height: 85vh;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      transition: background-image 1s ease-in-out;
-      display: flex;
-      flex-direction: column;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    
-    
-    /* Hero Content */
-    .hero-content {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 40px;
-      position: relative;
-    }
-    
-    .arrow {
-      background: none;
-      border: none;
-      color: white;
-      font-size: 30px;
-      cursor: pointer;
-      z-index: 10;
-      transition: transform 0.3s;
-    }
-    
-    .arrow:hover {
-      transform: scale(1.2);
-    }
-    
-    .hero-text {
-      text-align: center;
-      max-width: 624px;
-      margin-left: 476px;
-      margin-top: -50px;
-    }
-    
-    .grade {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-    
-    .grade-number {
-      font-weight: bold;
-      font-size: 24px;
-    }
-    
-    .smart-title {
-      font-size: 50px;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-    
-    .subtext {
-      font-size: 16px;
-      margin-bottom: 20px;
-    }
-    .lang-box {
-      border: 1px solid #8b8989;
-      border-radius: 10px;
-      padding: 10px 20px;
-      width: fit-content;
-      background-color: #b91c1c;
-      margin: 10px auto;
-      text-align: center;
-    }
-    
-    .lang-buttons {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .lang-buttons a {
-      position: relative;
-      margin: 0 10px;
-      text-decoration: none;
-      color: #ffffff;
-      font-weight: bold;
-    }
-    
-    .lang-buttons a:not(:last-child)::after {
-      content: "";
-      position: absolute;
-      right: -10px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 1px;
-      height: 20px;
-      background-color: #aaa;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    
-    .visit-text {
-      font-size: 16px;
-      margin-top: 10px;
-    }
-    
-    .visit-link {
-      font-weight: bold;
-      color: #ffd700;
-    }
-    
+.hero-section {
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
 
-    /* Responsive Styling */
-  @media (max-width: 1024px) {
+.hero-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: relative;
+}
 
+.arrow {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s;
+}
 
-    .smart-title {
-      font-size: 36px;
-    }
+.arrow:hover {
+  transform: scale(1.2);
+}
 
-    .grade {
-      font-size: 18px;
-    }
+.hero-text {
+  text-align: center;
+  max-width: 624px;
+  margin: 0 auto;
+  
+}
 
-    .grade-number {
-      font-size: 22px;
-    }
+.grade {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 
-    .subtext,
-    .visit-text {
-      font-size: 14px;
-    }
+.grade-number {
+  font-weight: bold;
+  font-size: 24px;
+}
 
-    .lang-box {
-      padding: 8px 16px;
-    }
+.smart-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 10px 0;
+}
 
-    .arrow {
-      font-size: 24px;
-      display: none;
-    }
+.subtext {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 
-    .hero-content {
-      padding: 40px 20px;
-    }
+.lang-box {
+  border: 1px solid #8b8989;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: fit-content;
+  background-color: #b91c1c;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.lang-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-buttons a {
+  position: relative;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.lang-buttons a:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  background-color: #aaa;
+}
+
+.visit-text {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.visit-link {
+  font-weight: bold;
+  color: #ffd700;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .smart-title {
+    font-size: 36px;
   }
 
-  @media (max-width: 768px) {
-    .hero-section {
-      height: auto;
-      padding-bottom: 20px;
-    }
-
-    .hero-content {
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    .left-arrow {
-      left: 10px;
-    }
-
-    .right-arrow {
-      right: 10px;
-    }
-
-    .hero-text {
-      padding: 16px;
-      max-width: 95%;
-    }
-  
-    .smart-title {
-      font-size: 28px;
-    }
-  
-    .grade {
-      font-size: 16px;
-    }
-  
-    .grade-number {
-      font-size: 20px;
-    }
-
-    .subtext {
-      font-size: 14px;
-    }
-
-    .lang-box {
-      margin: 10px auto;
-    }
-
-    .visit-text {
-      font-size: 14px;
-    }
+  .grade {
+    font-size: 18px;
   }
 
-  @media (max-width: 480px) {
-    .smart-title {
-      font-size: 22px;
-    }
-    .hero-text {
-      padding: 12px;
-      max-width: 100%;
-      text-align: left;
-      margin-left : -116px;
-      margin-top : 54px;
-      margin-bottom: -38px;
-    }
-  .lang-box{
-    margin-left: -5px;
+  .grade-number {
+    font-size: 22px;
   }
 
-    .smart-title {
-      font-size: 22px;
-    }
-  
-    .grade {
-      font-size: 14px;
-    }
-  
-    .grade-number {
-      font-size: 18px;
-    }
-  
-    .subtext,
-    .visit-text {
-      font-size: 12px;
-    }
-
-    .arrow {
-      font-size: 20px;
-    }
-
-    .lang-buttons a {
-      font-size: 12px;
-      margin: 0 6px;
-    }
+  .subtext,
+  .visit-text {
+    font-size: 14px;
   }
 
+  .lang-box {
+    padding: 8px 16px;
+  }
 
-  
+  .arrow {
+    font-size: 24px;
+    display: none;
+  }
+
+  .hero-content {
+    padding: 40px 20px;
+  }
+}
+
+/* Small Tablets & Mobiles */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+  }
+
+  .left-arrow {
+    left: 10px;
+  }
+
+  .right-arrow {
+    right: 10px;
+  }
+
+  .hero-text {
+    padding: 16px;
+    max-width: 100%;
+  }
+
+  .smart-title {
+    font-size: 28px;
+  }
+
+  .grade {
+    font-size: 16px;
+  }
+
+  .grade-number {
+    font-size: 20px;
+  }
+
+  .subtext {
+    font-size: 14px;
+  }
+
+  .lang-box {
+    margin: 10px auto;
+  }
+
+  .visit-text {
+    font-size: 14px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .hero-text {
+    padding: 12px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    margin-right: 132px;
+  }
+
+  .smart-title {
+    font-size: 22px;
+  }
+
+  .grade {
+    font-size: 14px;
+  }
+
+  .grade-number {
+    font-size: 18px;
+  }
+
+  .subtext,
+  .visit-text {
+    font-size: 12px;
+  }
+
+  .arrow {
+    font-size: 20px;
+  }
+
+  .lang-buttons a {
+    font-size: 12px;
+    margin: 0 6px;
+  }
+}

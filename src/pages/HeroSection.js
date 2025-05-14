@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MdArrowForwardIos, MdArrowBackIos } from 'react-icons/md';
-import Header from '../components/Header'; 
+import Header from '../components/Header';
 import './HeroSection.css';
-
 
 const slides = [
   {
@@ -38,9 +37,9 @@ const HeroSection = () => {
   };
 
   const goToNext = () => {
-    setCurrentIndex((prevIndex) =>                                                                                   
+    setCurrentIndex((prevIndex) =>
       prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-    );                                                                                                              
+    );
   };
 
   useEffect(() => {
@@ -52,14 +51,12 @@ const HeroSection = () => {
 
   return (
     <div className="hero-section" style={{ backgroundImage: `url(${currentSlide.image})` }}>
-      <Header /> {/*  Use Header here */}
+      <Header />
 
-      {/* Hero Content */}
       <div className="hero-content">
         <button className="arrow left-arrow" onClick={goToPrevious}>
           <MdArrowBackIos />
         </button>
-
 
         <div className="hero-text">
           <p className="grade">
@@ -78,7 +75,6 @@ const HeroSection = () => {
             VISIT: <span className="visit-link">{currentSlide.visit}</span>
           </p>
         </div>
-
 
         <button className="arrow right-arrow" onClick={goToNext}>
           <MdArrowForwardIos />

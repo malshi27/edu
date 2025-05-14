@@ -3,7 +3,7 @@
     display: flex;
     justify-content: flex-end; 
     align-items: center;
-    padding: 0px 95px;
+    padding: 0px 218px;
     background-color: transparent; 
   }
   
@@ -30,10 +30,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 14px;
+    padding: 17px 14px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    margin: 0px 96px;
+    margin: 0px 213px;
     backdrop-filter: blur(4px);
   }
   
