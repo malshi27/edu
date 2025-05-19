@@ -56,10 +56,12 @@ const Header = () => {
         <NavLink to="/" end className="nav-link" onClick={() => setShowNav(false)}>HOME</NavLink>
         <NavLink to="/about" className="nav-link" onClick={() => setShowNav(false)}>ABOUT US</NavLink>
         <NavLink to="/bookstore" className="nav-link" onClick={() => setShowNav(false)}>BOOK STORE</NavLink>
+        
         <NavLink to="/procurements" className="nav-link" onClick={() => setShowNav(false)}>PROCUREMENTS</NavLink>
         <NavLink to="/careers" className="nav-link" onClick={() => setShowNav(false)}>CAREERS</NavLink>
         <NavLink to="/media" className="nav-link" onClick={() => setShowNav(false)}>MEDIA</NavLink>
         <NavLink to="/news" className="nav-link" onClick={() => setShowNav(false)}>NEWS</NavLink>
+        <NavLink to="/bookstore#dashboard" className="nav-link" onClick={() => setShowNav(false)}>BOOK DASHBOARD</NavLink> {/* ✅ Added */}
       </div>
     </header>
   );

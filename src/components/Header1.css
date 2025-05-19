@@ -11,11 +11,11 @@
 
 /* Top Bar */
 .top-bar-text-1 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0px 95px;
-  background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 218px;
+    background-color: transparent;
 }
 
 .top-bar-text-1 a {
@@ -38,14 +38,14 @@
 }
 
 .top-bar-1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 14px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  margin: 0px 96px;
-  backdrop-filter: blur(4px);
+ display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0px 213px;
+    backdrop-filter: blur(4px);
 }
 
 .top-bar-left-1 {
@@ -68,13 +68,13 @@
 }
 
 .search-input-1 {
-  padding: 7px 189px;
-  border: none;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  font-size: 14px;
-  margin-left: 77px;
-  background-color: #e2dfdf;
+   padding: 8px 189px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+    margin-left: 77px;
+    background-color: #e2dfdf;
 }
 
 .search-button-1 {

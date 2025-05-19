@@ -40,7 +40,12 @@
   gap: 20px;
   max-width: 1082px;
   margin: 0 auto;
-  margin-bottom: 50px;
+ margin-bottom: -262px;
+ margin-top: 40px;
+}
+
+.book-section__tabs{
+margin-top: 30px;
 }
 
 .book-card-1 {

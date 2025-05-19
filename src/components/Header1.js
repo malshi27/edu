@@ -59,6 +59,9 @@ const Header1 = () => {
         <NavLink to="/careers" className="nav-link-1">CAREERS</NavLink>
         <NavLink to="/media" className="nav-link-1">MEDIA</NavLink>
         <NavLink to="/news" className="nav-link-1">NEWS</NavLink>
+
+        {/* ✅ New Link to Book Dashboard */}
+        <NavLink to="/dashboard" className="nav-link-1">BOOK DASHBOARD</NavLink>
       </div>
     </header>
   );

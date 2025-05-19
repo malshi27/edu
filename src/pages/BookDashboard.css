@@ -1,0 +1,36 @@
+.dashboard-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.book-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.book-form input {
+  flex: 1 1 30%;
+  padding: 8px;
+}
+
+.book-form button {
+  padding: 10px 20px;
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.book-table th, .book-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.book-table th {
+  background-color: #f0f0f0;
+}

@@ -6,7 +6,8 @@ import QuickExplore from './pages/QuickExplore';
 import ServiceCards from './pages/ServiceCards';
 import BookSection from './pages/BookSection';
 import Footer from './components/Footer';
-import BookStoreSection from './pages/BookStoreSection'; // Import the new Book Store section
+import BookStoreSection from './pages/BookStoreSection';
+import BookDashboard from './pages/BookDashboard'; // ✅ Already imported
 
 function App() {
   return (
@@ -22,7 +23,6 @@ function App() {
                 <QuickExplore />
                 <ServiceCards />
                 <BookSection />
-
                 <Footer />
               </>
             }
@@ -33,8 +33,21 @@ function App() {
             path="/bookstore"
             element={
               <>
-                <Header1/> {/* Optional: keep top layout consistent */}
+                <Header1 />
                 <BookStoreSection />
+                <BookDashboard />
+                <Footer />
+              </>
+            }
+          />
+
+          {/* ✅ Book Dashboard Page Route (Standalone) */}
+          <Route
+            path="/dashboard"
+            element={
+              <>
+                <Header1 />
+                <BookDashboard />
                 <Footer />
               </>
             }
